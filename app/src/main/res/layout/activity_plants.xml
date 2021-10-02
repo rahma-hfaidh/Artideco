@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    tools:context=".PlantsActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="hauteur de plants"
+                android:textSize="80px"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="cm"/>
+
+
+
+
+            <TextView
+                android:layout_marginTop="100px"
+                android:layout_width="match_parent"
+                android:id="@+id/t1"
+                android:layout_height="wrap_content"
+                android:text="Feuille"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                tools:ignore="MissingConstraints" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="100px"
+                app:layout_constraintBaseline_toBottomOf="@id/t1"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10px"
+                        android:src="@drawable/f1"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10px"
+                        android:src="@drawable/f2"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10px"
+                        android:src="@drawable/f3"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10px"
+                        android:src="@drawable/f4"
+                        tools:ignore="MissingConstraints" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_marginTop="10px"
+                android:layout_width="match_parent"
+                android:id="@+id/t2"
+                android:layout_height="wrap_content"
+                android:text="Pots"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_marginTop="100px"
+                app:layout_constraintBaseline_toBottomOf="@id/t1"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10px"
+                        android:src="@drawable/p1"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10px"
+                        android:src="@drawable/p2"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10px"
+                        android:src="@drawable/p3"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10px"
+                        android:src="@drawable/p4"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10px"
+                        android:src="@drawable/p5"
+                        tools:ignore="MissingConstraints" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
