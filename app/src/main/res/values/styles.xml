@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="edt_hauteur" parent="TextAppearance.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:hint">cm</item>
+        <item name="android:inputType">number</item>
+    </style>
+    <style name="txt_view" parent="TextAppearance.AppCompat.Widget.TextView.SpinnerItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginTop">100px</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="txt_view_choix" parent="TextAppearance.AppCompat.Widget.TextView.SpinnerItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">50px</item>
+        <item name="android:textSize">20dp </item>
+    </style>
+</resources>

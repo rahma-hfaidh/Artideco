@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">ArtiDeco</string>
+    <string name="cayegorie1">Feuille</string>
+    <string name="choix1">Monstera</string>
+    <string name="choix2">Palm</string>
+    <string name="choix3">Philodendron</string>
+    <string name="choix4">hello</string>
+    <string name="choix_pot_1">Pot 1</string>
+    <string name="choix_pot_2">Pot 2</string>
+    <string name="choix_pot_3">Pot 3</string>
+    <string name="choi_pot_4">Pot 4</string>
+    <string name="choix_pot_5">Pot 5</string>
 </resources>

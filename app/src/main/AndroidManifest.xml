@@ -9,13 +9,16 @@
         android:roundIcon="@drawable/logo1"
         android:supportsRtl="true"
         android:theme="@style/Theme.ArtiDeco">
-        <activity android:name=".PlantsActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".PlantsActivity" />
+        <activity android:name=".MainActivity">
+
         </activity>
     </application>
 

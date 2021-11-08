@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="191dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imagePlant"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cornerRadius="8dp"
+            android:layout_margin="10px"
+            android:contentDescription="my_image_description"
+            android:outlineAmbientShadowColor="@color/green"
+            app:shapeAppearanceOverlay="@style/circular"
+            app:strokeColor="@color/gray"
+            app:strokeWidth="5dp"
+            android:src="@drawable/f2" />
+
+        <TextView
+            android:id="@+id/titrePlant"
+            style="@style/txt_view_choix"
+            android:text="@string/choix1"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

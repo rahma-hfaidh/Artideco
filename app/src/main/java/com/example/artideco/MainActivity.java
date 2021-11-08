@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         List<Fragment> list= new ArrayList<>();
 
-        list.add(new Splash());
+
         list.add(new Homepage());
         list.add(new Contact());
 

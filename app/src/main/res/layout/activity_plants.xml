@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back"
     android:orientation="vertical"
     tools:context=".PlantsActivity">
     <ScrollView
@@ -19,84 +18,44 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:text="hauteur de plants"
+                android:layout_height="60dp"
+                android:textColor="@color/green"
                 android:textSize="80px"
-                android:layout_height="wrap_content"/>
+                />
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:hint="cm"/>
-
-
+                style="@style/edt_hauteur"/>
 
 
             <TextView
-                android:layout_marginTop="100px"
-                android:layout_width="match_parent"
                 android:id="@+id/t1"
-                android:layout_height="wrap_content"
-                android:text="Feuille"
-                android:textSize="30dp"
-                android:textStyle="bold"
-                android:textColor="@color/white"
+                android:text="@string/cayegorie1"
+                style="@style/txt_view"
                 tools:ignore="MissingConstraints" />
 
-            <HorizontalScrollView
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/produit_recyclerview"
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
-                android:layout_marginTop="100px"
-                app:layout_constraintBaseline_toBottomOf="@id/t1"
-                tools:ignore="MissingConstraints">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:nestedScrollingEnabled="false"
+                />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_margin="10px"
-                        android:src="@drawable/f1"
-                        tools:ignore="MissingConstraints" />
-
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_margin="10px"
-                        android:src="@drawable/f2"
-                        tools:ignore="MissingConstraints" />
-
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_margin="10px"
-                        android:src="@drawable/f3"
-                        tools:ignore="MissingConstraints" />
-
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_margin="10px"
-                        android:src="@drawable/f4"
-                        tools:ignore="MissingConstraints" />
-                </LinearLayout>
-            </HorizontalScrollView>
 
             <TextView
                 android:layout_marginTop="10px"
                 android:layout_width="match_parent"
                 android:id="@+id/t2"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
+                android:textColor="@color/green"
                 android:text="Pots"
                 android:textSize="30dp"
-                android:textColor="@color/white"
                 android:textStyle="bold"
                 tools:ignore="MissingConstraints" />
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="158dp"
+                android:layout_height="190dp"
                 android:layout_marginTop="100px"
                 app:layout_constraintBaseline_toBottomOf="@id/t1"
                 tools:ignore="MissingConstraints">
@@ -106,40 +65,127 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_margin="10px"
-                        android:src="@drawable/p1"
-                        tools:ignore="MissingConstraints" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="191dp"
 
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_margin="10px"
-                        android:src="@drawable/p2"
-                        tools:ignore="MissingConstraints" />
+                        android:orientation="vertical">
 
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_margin="10px"
-                        android:src="@drawable/p3"
-                        tools:ignore="MissingConstraints" />
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            app:cornerRadius="8dp"
+                            android:layout_margin="10px"
+                            android:contentDescription="my_image_description"
+                            android:outlineAmbientShadowColor="@color/green"
+                            app:shapeAppearanceOverlay="@style/circular"
+                            app:strokeColor="@color/gray"
+                            app:strokeWidth="5dp"
+                            android:src="@drawable/p4" />
 
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_margin="10px"
-                        android:src="@drawable/p4"
-                        tools:ignore="MissingConstraints" />
+                        <TextView
+                            style="@style/txt_view_choix"
+                            android:text="@string/choix_pot_1"
+                            />
+                    </LinearLayout>
 
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_margin="10px"
-                        android:src="@drawable/p5"
-                        tools:ignore="MissingConstraints" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="191dp"
+
+                        android:orientation="vertical">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            app:cornerRadius="8dp"
+                            android:layout_margin="10px"
+                            android:contentDescription="my_image_description"
+                            android:outlineAmbientShadowColor="@color/green"
+                            app:shapeAppearanceOverlay="@style/circular"
+                            app:strokeColor="@color/gray"
+                            app:strokeWidth="5dp"
+                            android:src="@drawable/p3" />
+
+                        <TextView
+                            style="@style/txt_view_choix"
+                            android:text="@string/choix_pot_2"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="191dp"
+
+                        android:orientation="vertical">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            app:cornerRadius="8dp"
+                            android:layout_margin="10px"
+                            android:contentDescription="my_image_description"
+                            android:outlineAmbientShadowColor="@color/green"
+                            app:shapeAppearanceOverlay="@style/circular"
+                            app:strokeColor="@color/gray"
+                            app:strokeWidth="5dp"
+                            android:src="@drawable/p5" />
+
+                        <TextView
+                            style="@style/txt_view_choix"
+                            android:text="@string/choix_pot_3"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="191dp"
+
+                        android:orientation="vertical">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            app:cornerRadius="8dp"
+                            android:layout_margin="10px"
+                            android:contentDescription="my_image_description"
+                            android:outlineAmbientShadowColor="@color/green"
+                            app:shapeAppearanceOverlay="@style/circular"
+                            app:strokeColor="@color/gray"
+                            app:strokeWidth="5dp"
+                            android:src="@drawable/p2" />
+
+                        <TextView
+                            style="@style/txt_view_choix"
+                            android:text="@string/choi_pot_4"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="191dp"
+
+                        android:orientation="vertical">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            app:cornerRadius="8dp"
+                            android:layout_margin="10px"
+                            android:contentDescription="my_image_description"
+                            android:outlineAmbientShadowColor="@color/green"
+                            app:shapeAppearanceOverlay="@style/circular"
+                            app:strokeColor="@color/gray"
+                            app:strokeWidth="5dp"
+                            android:src="@drawable/p1" />
+
+                        <TextView
+                            style="@style/txt_view_choix"
+                            android:text="@string/choix_pot_5"
+                            />
+                    </LinearLayout>
+
+
                 </LinearLayout>
             </HorizontalScrollView>
 
