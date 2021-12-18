@@ -81,7 +81,7 @@ public class Homepage extends Fragment {
         layoutManager = new LinearLayoutManager(getContext(),RecyclerView.HORIZONTAL,false);
         recyclerViewProduitFlowers.setLayoutManager(layoutManager);
         //on donne notre adapter à notre recyclerview
-        produitAdapter = new ProduitAdapter(listProduitPlants, getContext());
+        produitAdapter = new ProduitAdapter(listProduitFlowers, getContext());
         recyclerViewProduitFlowers.setAdapter(produitAdapter);
         //on sépare chaque ligne de notre liste par un trait
         dividerItemDecoration = new DividerItemDecoration(recyclerViewProduitFlowers.getContext(),DividerItemDecoration.VERTICAL);
@@ -103,7 +103,7 @@ public class Homepage extends Fragment {
         layoutManager = new LinearLayoutManager(getContext(),RecyclerView.HORIZONTAL,false);
         recyclerViewProduitGardens.setLayoutManager(layoutManager);
         //on donne notre adapter à notre recyclerview
-        produitAdapter = new ProduitAdapter(listProduitPlants, getContext());
+        produitAdapter = new ProduitAdapter(listProduitGardens, getContext());
         recyclerViewProduitGardens.setAdapter(produitAdapter);
         //on sépare chaque ligne de notre liste par un trait
         dividerItemDecoration = new DividerItemDecoration(recyclerViewProduitGardens.getContext(),DividerItemDecoration.VERTICAL);
