@@ -25,6 +25,9 @@ public class Homepage extends Fragment {
     private ProduitAdapter produitAdapter;
 
     TextView textPlants;
+    TextView textFlowres;
+    TextView textGarden;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater,
@@ -34,14 +37,44 @@ public class Homepage extends Fragment {
         ViewGroup rootView =(ViewGroup)inflater.inflate(R.layout.homepage,
                 container,false);
 
+
+        //plants
         textPlants =(TextView)rootView.findViewById(R.id.text_plants);
         textPlants.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getActivity().getApplication(),PlantsActivity.class);
+                Intent i = new Intent(getActivity().getApplication(),LoginActivity.class);
+                i.putExtra("plants",textPlants.getText().toString());
                 startActivity(i);
             }
         });
+
+
+        //flowers
+        textFlowres =(TextView)rootView.findViewById(R.id.text_flowers);
+        textFlowres.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity().getApplication(),LoginActivity.class);
+                i.putExtra("flowers",textFlowres.getText().toString());
+                startActivity(i);
+            }
+        });
+
+        //garden
+        textGarden =(TextView)rootView.findViewById(R.id.text_gardens);
+        textGarden.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity().getApplication(),LoginActivity.class);
+                i.putExtra("gardens",textGarden.getText().toString());
+                startActivity(i);
+            }
+        });
+
+
+
+
 
         //Plants
 

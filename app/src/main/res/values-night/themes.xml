@@ -13,4 +13,11 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="Theme.ArtiDeco.Fullscreen" parent="Theme.MaterialComponents.NoActionBar">
+
+        <item name="colorPrimary">@color/purple_500</item>
+    </style>
+    <style name="ThemeOverlay.Demo.FullscreenContainer" parent="">
+
+    </style>
 </resources>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".PlantsActivity">
+    tools:context=".VerticalGardenActivity">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,7 +17,16 @@
             android:orientation="vertical">
             <TextView
                 android:layout_width="wrap_content"
-                android:text="plant height"
+                android:text="Garden height "
+                android:layout_height="60dp"
+                android:textColor="@color/green"
+                android:textSize="80px"
+                />
+            <EditText
+                style="@style/edt_hauteur"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Garden width "
                 android:layout_height="60dp"
                 android:textColor="@color/green"
                 android:textSize="80px"
@@ -33,7 +42,7 @@
                 tools:ignore="MissingConstraints" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/produit_recyclerview"
+                android:id="@+id/produit_recyclerview3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -41,20 +50,7 @@
                 />
 
 
-            <TextView
-                android:id="@+id/t2"
-                android:text="@string/choix_plants_1"
-                style="@style/txt_view"
-                tools:ignore="MissingConstraints" />
 
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/produit_recyclerview_pot"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:nestedScrollingEnabled="false"
-                />
             <RelativeLayout
                 android:id="@+id/rl_submit"
                 android:layout_width="match_parent"
@@ -62,10 +58,10 @@
                 android:layout_marginTop="50dp"
                 android:layout_margin="30dp"
                 android:background="@drawable/rectangle_green_200"
-                app:layout_constraintTop_toBottomOf="@+id/produit_recyclerview_pot"
+                app:layout_constraintTop_toBottomOf="@+id/produit_recyclerview3"
                 >
                 <TextView
-                    android:id="@+id/a1"
+                    android:id="@+id/a3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/tv_buy"
@@ -74,10 +70,7 @@
                     android:fontFamily="@font/dancing_script_variable_font_wght"
                     android:layout_centerInParent="true"
                     android:textColor="@color/white"/>
-
-
             </RelativeLayout>
-
 
         </LinearLayout>
     </ScrollView>

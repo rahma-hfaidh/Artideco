@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".SignupActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_back"
+        android:src="@drawable/arrow__left"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <EditText
+
+        android:id="@+id/edt_lastname"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/edtt_lstname"
+        style="@style/input_style"
+        app:layout_constraintTop_toBottomOf="@+id/img_back"
+
+        />
+    <EditText
+        android:id="@+id/edt_firstname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/edtt_name"
+        style="@style/input_style"
+        app:layout_constraintTop_toBottomOf="@+id/edt_lastname"
+        />
+    <EditText
+
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/edtt_mail"
+        style="@style/input_style"
+        app:layout_constraintTop_toBottomOf="@+id/edt_firstname"
+
+
+        />
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:hint="@string/edtt_password"
+        style="@style/input_style"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email"
+        />
+    <EditText
+        android:id="@+id/edt_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:hint="@string/edtt_confirm_pass"
+        style="@style/input_style"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_man"
+                android:fontFamily="@font/dancing_script_variable_font_wght"
+                android:text="Man"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+
+
+
+                />
+            <Switch
+                android:id="@+id/switch_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_woman"
+                android:fontFamily="@font/dancing_script_variable_font_wght"
+                android:text="Women"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+
+
+
+
+                />
+        </LinearLayout>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chk_accept"
+        android:fontFamily="@font/dancing_script_variable_font_wght"
+        android:layout_marginTop="30dp"
+        android:id="@+id/chk_cgu"
+        android:textColor="@color/green"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_man"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rectangle_green_200"
+        app:layout_constraintTop_toBottomOf="@+id/chk_cgu"
+        >
+        <TextView
+            android:id="@+id/tv_valider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_valider"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:fontFamily="@font/dancing_script_variable_font_wght"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

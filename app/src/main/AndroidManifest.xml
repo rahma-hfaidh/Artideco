@@ -9,6 +9,11 @@
         android:roundIcon="@drawable/logo1"
         android:supportsRtl="true"
         android:theme="@style/Theme.ArtiDeco">
+        <activity android:name=".VerticalGardenActivity"></activity>
+        <activity android:name=".FlowersActivity" />
+        <activity android:name=".PayementActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".LoginActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,9 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".PlantsActivity" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

@@ -34,7 +34,7 @@
                 />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/text_flowers"
                 android:layout_width="554dp"
                 android:layout_height="60dp"
                 android:text="Flowres"
@@ -51,7 +51,7 @@
                 />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/text_gardens"
                 android:layout_width="554dp"
                 android:layout_height="60dp"
                 android:text="Vertical Garden"

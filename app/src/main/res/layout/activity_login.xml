@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+  <RelativeLayout
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:layout_marginTop="50dp"
+      android:id="@+id/rl_app_icon"
+      android:background="@drawable/circle_green_200"
+      android:padding="5dp"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo1" />
+  </RelativeLayout>
+
+  <EditText
+      android:id="@+id/edt_email"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:inputType="textEmailAddress"
+      android:hint="@string/edtt_mail"
+      style="@style/input_style"
+      app:layout_constraintTop_toBottomOf="@+id/rl_app_icon"
+      />
+  <EditText
+      android:id="@+id/edt_password"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:inputType="textPassword"
+      android:hint="@string/edtt_password"
+      style="@style/input_style"
+      app:layout_constraintTop_toBottomOf="@+id/edt_email"
+      />
+  <RelativeLayout
+      android:id="@+id/rl_submit"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_marginTop="50dp"
+      android:background="@drawable/rectangle_green_200"
+      app:layout_constraintTop_toBottomOf="@+id/edt_password"
+      >
+    <TextView
+        android:id="@+id/tv_valider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_valider"
+        android:textStyle="bold"
+        android:textSize="28sp"
+
+        android:fontFamily="@font/dancing_script_variable_font_wght"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"/>
+
+
+  </RelativeLayout>
+  <TextView
+      android:id="@+id/tv_signup"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/tv_signup"
+      android:textSize="20sp"
+      app:layout_constraintTop_toBottomOf="@+id/rl_submit"
+      app:layout_constraintRight_toRightOf="parent"
+      android:layout_marginTop="30dp"
+      android:layout_centerInParent="true"
+      android:textColor="@color/green"/>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
